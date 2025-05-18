@@ -19,6 +19,18 @@ nav a:hover { animation: blink 1s infinite; }
   width: 400px;
   height: auto;
 }
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo:hover {
+  animation: rotate360 2s linear infinite;
+}
 main { padding: 2rem; }
 section { margin-bottom: 2rem; }
 footer { text-align: center; padding: 1rem; margin-top: 2rem; }
