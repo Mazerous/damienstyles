@@ -35,7 +35,7 @@ nav a:hover { animation: blink 1s infinite; }
 }
 
 h1 {
-  text-size: 5rem;
+  font-size: 5rem;
 }
 
 .logo:hover {
