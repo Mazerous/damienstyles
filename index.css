@@ -42,12 +42,34 @@ h1 {
   animation: rotate360 1s linear infinite;
 }
 
+.content-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .container1 {
   display: flex;
   align-items: center;
-  gap: 2rem; /* Adjust spacing between image and text */
-  margin: 2rem 0; /* Adds spacing around the section */
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text2 {
+  max-width: 600px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
 
 .container1 .image2 img {
   max-width: 300px; /* Adjust image size */
