@@ -29,7 +29,7 @@ nav a:hover { animation: blink 1s infinite; }
 }
 
 .logo:hover {
-  animation: rotate360 2s linear infinite;
+  animation: rotate360 1s linear infinite;
 }
 main { padding: 2rem; }
 section { margin-bottom: 2rem; }
