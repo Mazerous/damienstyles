@@ -16,8 +16,8 @@ nav a { font-family: 'Shadows Into Light', cursive; color: #fff; text-decoration
 }
 nav a:hover { animation: blink 1s infinite; }
 .logo {
-  width: 400px !important;
-  height: auto !important;
+  width: 400px;
+  height: auto;
 }
 main { padding: 2rem; }
 section { margin-bottom: 2rem; }
