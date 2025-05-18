@@ -35,7 +35,7 @@ nav a:hover { animation: blink 1s infinite; }
 }
 
 .dropoutklub {
-  text-size: 2rem;
+  text-size: 5rem;
 }
 
 .logo:hover {
@@ -57,7 +57,7 @@ nav a:hover { animation: blink 1s infinite; }
 
 .container1 .text2 {
   flex: 1;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 main { padding: 2rem; }
