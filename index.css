@@ -9,7 +9,6 @@ nav a:hover { animation: blink 1s step-end infinite alternate; color: red; }
 .logo {
   width: 400px !important;
   height: auto !important;
-  border: 2px solid red; /* to visualize the image boundaries */
 }
 main { padding: 2rem; }
 section { margin-bottom: 2rem; }
