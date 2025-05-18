@@ -3,7 +3,7 @@ header { padding: 1rem; display: flex; justify-content: center; align-items: cen
 nav {
   font-family: 'Shadows Into Light', cursive;
 }
-nav ul { font-family: 'Shadows Into Light', cursive; list-style: none; display: flex; gap: 4rem; align-items: center; font-size: 1.5rem }
+nav ul { font-family: 'Shadows Into Light', cursive; list-style: none; display: flex; gap: 6rem; align-items: center; font-size: 3rem }
 nav a { font-family: 'Shadows Into Light', cursive; color: #fff; text-decoration: none; }
 nav a:hover { animation: blink 1s step-end infinite alternate; color: red; }
 .logo {
