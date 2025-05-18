@@ -5,7 +5,16 @@ nav {
 }
 nav ul { font-family: 'Shadows Into Light', cursive; list-style: none; display: flex; gap: 6rem; align-items: center; font-size: 3rem }
 nav a { font-family: 'Shadows Into Light', cursive; color: #fff; text-decoration: none; }
-nav a:hover { animation: blink 1s step-end infinite alternate; color: red; }
+@keyframes blink {
+  0%, 100% {
+    color: red;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+nav a:hover { animation: blink 1s infinite; }
 .logo {
   width: 400px !important;
   height: auto !important;
