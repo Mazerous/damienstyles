@@ -28,6 +28,10 @@ nav a:hover { animation: blink 1s infinite; }
   }
 }
 
+.dropoutklub {
+  text-align: center;
+}
+
 .logo:hover {
   animation: rotate360 1s linear infinite;
 }
