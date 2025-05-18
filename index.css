@@ -41,6 +41,25 @@ nav a:hover { animation: blink 1s infinite; }
 .logo:hover {
   animation: rotate360 1s linear infinite;
 }
+
+.container1 {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Adjust spacing between image and text */
+  margin: 2rem 0; /* Adds spacing around the section */
+}
+
+.container1 .image2 img {
+  max-width: 300px; /* Adjust image size */
+  height: auto;
+  border-radius: 10px;
+}
+
+.container1 .text2 {
+  flex: 1;
+  font-size: 1rem;
+}
+
 main { padding: 2rem; }
 section { margin-bottom: 2rem; }
 footer { text-align: center; padding: 1rem; margin-top: 2rem; }
