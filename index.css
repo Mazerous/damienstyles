@@ -16,42 +16,42 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 3rem;
 }
 
 nav a {
+  font-family: 'Shadows Into Light', cursive;
   color: #fff;
   text-decoration: none;
-  font-family: 'Shadows Into Light', cursive;
-}
-
-nav a:hover {
-  animation: blink 1s infinite alternate;
 }
 
 @keyframes blink {
   0%, 100% { color: red; }
-  50% { color: transparent; }
+  50% { opacity: 0; }
+}
+
+nav a:hover {
+  animation: blink 1s infinite;
 }
 
 .logo {
-  width: 150px;
+  width: 400px;
   height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Blaka', sans-serif;
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo:hover {
+  animation: rotate360 1s linear infinite;
 }
 
 h1 {
   font-size: 5rem;
-  text-align: center;
-}
-
-h2.dropoutklub {
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -70,16 +70,25 @@ h2.dropoutklub {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 1200px;
 }
 
-.content-image img {
-  max-width: 100%;
+.container1 .image2 img {
+  max-width: 500px;
   height: auto;
+  border-radius: 10px;
+}
+
+.container2 .image3 img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .text2 {
+  flex: 1;
   max-width: 600px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: left;
 }
 
@@ -89,23 +98,81 @@ footer {
   margin-top: 2rem;
 }
 
+/* Container for stream boxes to create two per row layout */
+.stream-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Each box takes about half width minus gap */
+.stream-box {
+  flex: 1 1 48%; /* grow, shrink, basis */
+  box-sizing: border-box;
+  min-width: 280px; /* Prevent too narrow on small screens */
+  max-width: 600px;
+  min-height: 220px; /* consistent height for uniform boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #111;
+  border: 2px solid #444;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stream-box:hover {
+  border-color: #e63946; /* subtle red highlight on hover */
+  box-shadow: 0 6px 12px rgba(230, 57, 70, 0.5);
+}
+
+.stream-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f1faee;
+}
+
+.stream-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.stream-box a {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.2rem;
+  color: #a8dadc;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.stream-box a:hover {
+  border-color: #e63946;
+  color: #e63946;
+}
+
 .btn-red-blink {
   display: inline-block;
   background-color: red;
   color: white;
   padding: 0.75rem 2rem;
   font-size: 1.4rem;
-  font-family: 'Blaka', sans-serif;
+  font-family: 'Blaka', sans-serif; /* changed font */
   text-decoration: none;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .btn-red-blink:hover {
-  background-color: darkred;
-  color: white;
-  animation: blink 1s infinite alternate;
+  /* You can optionally keep hover animation or just keep blinking */
+  background-color: darkred; /* slight background change on hover */
+  animation: blink 1s infinite alternate; /* faster blink on hover */
 }
-
